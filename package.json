@@ -1,0 +1,37 @@
+{
+  "name": "silverbullet-mcp",
+  "version": "1.0.0",
+  "description": "MCP bridge that exposes a SilverBullet space's /.fs HTTP API as MCP tools — list, read, write, append, delete and search markdown pages.",
+  "mcpName": "io.github.wicahma/silverbullet-mcp",
+  "license": "MIT",
+  "author": {
+    "name": "Teguh Dwi Cahya Kusuma",
+    "url": "https://github.com/wicahma"
+  },
+  "bin": {
+    "silverbullet-mcp": "bin/silverbullet-mcp.js"
+  },
+  "files": [
+    "bin/",
+    "sb_mcp.py",
+    "skills/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "silverbullet",
+    "notes",
+    "markdown",
+    "knowledge-base",
+    "pkms"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wicahma/silverbullet-mcp.git"
+  }
+}

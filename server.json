@@ -1,0 +1,49 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.wicahma/silverbullet-mcp",
+  "title": "SilverBullet",
+  "description": "List, read, write, append, delete and search markdown pages in a SilverBullet space.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/wicahma/silverbullet-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://silverbullet.md",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "silverbullet-mcp",
+      "version": "1.0.0",
+      "runtimeHint": "npx",
+      "runtimeArguments": [
+        {
+          "type": "named",
+          "name": "-y"
+        }
+      ],
+      "packageArguments": [
+        {
+          "type": "named",
+          "name": "--stdio"
+        }
+      ],
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SB_URL",
+          "description": "Base URL of the SilverBullet instance to expose.",
+          "default": "http://127.0.0.1:8123",
+          "isRequired": false
+        },
+        {
+          "name": "SB_AUTH_TOKEN",
+          "description": "Optional token forwarded to SilverBullet as an Authorization header.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

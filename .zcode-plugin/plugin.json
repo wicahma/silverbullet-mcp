@@ -1,0 +1,41 @@
+{
+  "name": "silverbullet-mcp",
+  "version": "1.0.0",
+  "description": "Read, write, append, delete and search pages in a SilverBullet space through the silverbullet-mcp MCP endpoint.",
+  "author": {
+    "name": "Teguh Dwi Cahya Kusuma",
+    "url": "https://github.com/wicahma"
+  },
+  "license": "MIT",
+  "skills": "skills",
+  "keywords": [
+    "mcp",
+    "silverbullet",
+    "notes",
+    "markdown",
+    "knowledge-base",
+    "pkms"
+  ],
+  "userConfig": {
+    "endpoint": {
+      "type": "string",
+      "default": "http://127.0.0.1:9339/mcp",
+      "description": "URL of your silverbullet-mcp endpoint. Defaults to the local bridge started with `npx -y silverbullet-mcp`; set your own host plus /mcp if you deploy it behind a reverse proxy."
+    },
+    "mcp_token": {
+      "type": "string",
+      "default": "",
+      "description": "Bearer token for the silverbullet-mcp endpoint (the server's MCP_TOKEN). Required — requests without it return 401."
+    }
+  },
+  "mcpServers": {
+    "silverbullet": {
+      "type": "http",
+      "url": "${user_config.endpoint}",
+      "headers": {
+        "Authorization": "Bearer ${user_config.mcp_token}"
+      },
+      "timeoutMs": 60000
+    }
+  }
+}

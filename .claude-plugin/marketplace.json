@@ -1,0 +1,21 @@
+{
+  "name": "silverbullet-mcp",
+  "owner": {
+    "name": "Teguh Dwi Cahya Kusuma",
+    "url": "https://github.com/wicahma"
+  },
+  "plugins": [
+    {
+      "name": "silverbullet-mcp",
+      "source": "./",
+      "description": "SilverBullet notes for any MCP-capable agent: list, read, write, append, delete and search pages, plus a skill describing the endpoint and its rules.",
+      "category": "productivity",
+      "keywords": [
+        "mcp",
+        "silverbullet",
+        "notes",
+        "markdown"
+      ]
+    }
+  ]
+}

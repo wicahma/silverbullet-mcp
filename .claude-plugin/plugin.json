@@ -1,0 +1,17 @@
+{
+  "name": "silverbullet-mcp",
+  "version": "1.0.0",
+  "description": "Read, write, append, delete and search pages in a SilverBullet space through the silverbullet-mcp MCP endpoint.",
+  "author": {
+    "name": "Teguh Dwi Cahya Kusuma",
+    "url": "https://github.com/wicahma"
+  },
+  "keywords": [
+    "mcp",
+    "silverbullet",
+    "notes",
+    "markdown",
+    "knowledge-base",
+    "pkms"
+  ]
+}
